@@ -41,15 +41,17 @@ h1, h2, h3 {
     line-height: 1;
     text-decoration: none;
     color: #fff;
-    padding: 10px 15px;
+    padding: 1vh 1.5vw;
 }
 .main .navigation_link:hover {
     border: 3px solid #4AF8DD;
 }
 .main .main_code {
-    margin: 120px 0 0 94px;
-    width: 227px;
-    height: 50px;
+    position: absolute;
+    top: 21vh;
+    left: 6.9vw;
+    width: 15.8vw;
+    height: 5vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -84,12 +86,9 @@ h1, h2, h3 {
 .main .main_code_bottom:nth-child(4) {
     width: 64px;
 }
-.main .main_buttongp {
-    
-}
 .main .main_buttongp button {
-    width: 187px;
-    height: 74px;
+    width: 13vw;
+    height: 8vh;
     border: 2px solid #142664;
     outline: none;
     border-radius: 15px;
@@ -99,14 +98,14 @@ h1, h2, h3 {
     font-family: 'Share Tech Mono';
     position: absolute;
     transform: rotate(-90deg);
-    top: 202px;
-    left: 34vw;
+    top: 19vh;
+    left: 38vw;
 }
 .main .main_list {
     position: absolute;
     left: 72vw;
-    top: 155px;
-    height: 158px;
+    top: 13.5vh;
+    height: 16vh;
     z-index: 2;
     list-style-type: none;
     padding: 0;
@@ -132,27 +131,26 @@ h1, h2, h3 {
 .main .main_pinksub {
     font-family: Permanent Marker;
     font-weight: normal;
-    font-size: 48px;
+    font-size: 3.3vw;
     line-height: 1;
     color: #FE5AA3;
-    padding-left: 13px;
+    padding-left: 1vw;
     position: absolute;
     top: 38vh;
 }
 .main .main_rightsub {
     font-family: Share Tech Mono;
-    font-size: 24px;
+    font-size: 2vh;
     line-height: 1;
-    color: #fff;
+    color: #eeeeee;
     position: absolute;
-    padding-left: 13px;
     top: 40.7vh;
     right: 2vh;
     z-index: 3;
 }
 .main .main_h1 {
     position: absolute;
-    top: 50%;
+    top: 50vh;
     transform: translateY(-50%);
     font-family: Rubik;
     font-weight: 900;
@@ -163,16 +161,25 @@ h1, h2, h3 {
     align-items: center;
     text-align: center;
     letter-spacing: -2px;
-    color: #fff;
+    color: #eeeeee;
     z-index: 5;
     text-transform: uppercase;
 }
+.main .main_line {
+    position: absolute;
+    top: 53vh;
+    left: 5vw;
+    width: 90vw;
+    height: 0.5vh;
+    background-color: #4AF8DD;
+    z-index: 2;
+}
 .main .main_gtd {
     position: absolute;
-    width: 322px;
+    width: 20vw;
     height: 105px;
     left: 10vw;
-    bottom: 20vh;
+    bottom: 12vh;
     font-family: Rubik;
     font-style: normal;
     font-weight: bold;
@@ -188,14 +195,287 @@ h1, h2, h3 {
     z-index: 3;
 }
 .main .main_img div {
+    position: absolute;
+    bottom: 2vh;
+    right: 17.5vw;
+    bottom: 20vh;
+    width: 36vh;
     font-family: Rajdhani;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 2.3vh;
     line-height: 36px;
     /* identical to box height, or 150% */
     color: #979797;
+    transform: rotate(-90deg);
 }
 .main .main_img img {
     width: 29vw;
     height: 40vh;
+}
+.main .main_buttonios button {
+    width: 13vw;
+    height: 8vh;
+    border: 2px solid #142664;
+    outline: none;
+    border-radius: 15px;
+    text-decoration-line: line-through;
+    color: #979797;
+    font-size: 2.3vh;
+    font-family: 'Share Tech Mono';
+    position: absolute;
+    transform: rotate(-90deg);
+    bottom: 16vh;
+    left: 38vw;
+}
+.main .main_buttongp button:hover, .main .main_buttonios button:hover {
+    box-shadow: -3px 3px 5px #4AF8DD;
+}
+.main .main_bottom {
+    position: absolute;
+    bottom: 1.5vh;
+    left: 2vw;
+    font-family: Rubik;
+    font-weight: bold;
+    font-size: 1.6vw;
+    line-height: 0.9;
+    color: #C4C4C4;
+}
+.main .main_stars {
+    display: none;
+}
+
+@media (max-height: 800px) {
+    .main .main_line {
+        top: 54vh;
+    }
+    .main .main_listitem {
+        font-size: 20px;
+    }
+    .main .main_pinksub {
+        top: 31vh;
+        font-size: 5vw;
+    }
+    .main .main_rightsub {
+        top: 38vh;
+        right: 3vw;
+        font-size: 1.5vw;
+    }
+    .main .navigation .navigation_link {
+        font-size: 1.7vw;
+    }
+    .main .main_gtd {
+        bottom: 15vh;
+        font-size: 53px;
+    }
+    .main .main_buttongp button, .main .main_buttonios button {
+        width: 11vw;
+        left: 40vw;
+        font-size: 18px;
+    }
+    .main .main_img img{
+        width: 27vw;
+    }
+    .main .main_img div{
+        right: 21vw;
+        bottom: 18vh;
+    }
+    .main .main_code {
+        height: 7vh;
+    }
+}
+
+@media (max-width: 991px) {
+    .main header .navigation {
+        margin-left: 42vw;
+    }
+    .main header .navigation_link {
+        font-size: 2.4vw;
+    }
+    .main .main_code {
+        width: 28vw;
+    }
+    .main .main_pinksub {
+        top: 37vh;
+        font-size: 7.3vw;
+    }
+    .main .main_rightsub {
+        top: 44.7vh;
+        right: 1vw;
+    }
+    .main .main_img img {
+        height: 28vh;
+    }
+    .main .main_img div {
+        right: 8.5vw;
+        font-size: 2vh;
+    }
+    .main .main_gtd {
+        bottom: 17vh;
+    }
+    .main .main_line {
+        top: 52vh;
+    }
+    .main .main_bottom {
+        bottom: 0.5vh;
+        left: 4vw;
+    }
+    .main .main_buttongp button, .main .main_buttonios button {
+        width: 18vw;
+        height: 7vh;
+    }
+    .main .main_buttongp button {
+        top: 22vh
+    }
+    .main .main_buttonios button {
+        bottom: 28vh
+    }
+}
+
+@media (max-width: 767px) {
+    .main header .navigation {
+        margin-left: 35vw;
+    }
+    .main header .navigation .navigation_link {
+        font-size: 2.7vw;
+    }
+    .main .main_gtd {
+        bottom: 10vh;
+    }
+}
+
+@media (max-width: 599px) {
+    .main {
+        height: 50vh;
+    }
+    .main .main_line {
+        top: 20vh;
+        left: -100vw;
+        width: 98vh;
+    }
+    .main .main_bg {
+        width: 100%;
+        top: 50vh;
+        height: 50vh;
+        z-index: inherit;
+    }
+    .main header .navigation {
+        display: none;
+    }
+    .main .main_title {
+        transform: rotate(-90deg);
+        top: 0;
+    }
+    .main .main_h1 {
+        font-size: 93px;
+        top: 17vh;
+        left: -58vh;
+    }
+    .main .main_pinksub {
+        font-size: 42px;
+        left: -55vh;
+        top: 7vh;
+    }
+    .main .main_img, .main .main_gtd, .main .main_code {
+        display: none;
+    }
+    .main .main_list {
+        left: 5vw;
+        top: 51vh;
+    }
+    .main .main_listitem {
+        font-size: 24px;
+        line-height: 19px;
+    }
+    .main .main_buttongp button{
+        left: 5vw;
+        top: 198px;
+        width: 38vw;
+        height: 9vh;
+    }
+    .main .main_buttonios button {
+        left: 5vw;
+        bottom: 13vh;
+        width: 38vw;
+        height: 9vh;
+    }
+    .main .main_rightsub {
+        transform: rotate(90deg);
+        color: #D8D8D8;
+        top: -15vh;
+        right: 99.2vh;
+        width: 200px;
+        font-size: 6.5vw;
+    }
+    .main header .navigation {
+        margin-left: 0;
+    }
+    .main .main_bottom {
+        bottom: 51.5vh;
+        font-size: 1.5vh;
+    }
+    .main .main_stars {
+        position: absolute;
+        top: 3vh;
+        right: 3vw;
+        display: inline;
+        color: #979797;
+        border-bottom: 2px solid #979797;
+    }
+}
+@media (max-width: 424px) {
+    .main .main_line {
+        left: -78vw;
+        width: 92vh;
+    }
+    .main .main_h1 {
+        font-size: 75px;
+        left: -53vh;
+    }
+    .main .main_pinksub {
+        left: -52vh;
+        top: 5vh;
+    }
+    .main .main_buttongp button{
+        top: 145px;
+        width: 35vw;
+    }
+    .main .main_buttonios button {
+        bottom: 13vh;
+        width: 35vw;
+    }
+    .main .main_rightsub {
+        right: 95.2vh;
+    }
+}
+@media (max-width: 374px) {
+    .main .main_line {
+        left: -70vw;
+        top: 25vh;
+    }
+    .main .main_h1 {
+        left: -48vh;
+        top: 22vh;
+        font-size: 60px;
+    }
+    .main .main_rightsub {
+        right: 91vh;
+        top: -10vh;
+    }
+    .main .main_pinksub {
+        left: -46vh;
+        top: 12vw;
+    }
+    .main .main_listitem {
+        font-size: 20px;
+        margin: 4px 0;
+    }
+    .main .main_rightsub {
+        right: 89vh;
+    }
+    .main .main_buttongp button{
+        top: 130px;
+    }
+    .main .main_bottom {
+        font-size: 2vh;
+    }
 }
