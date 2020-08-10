@@ -28,21 +28,20 @@ h1, h2, h3 {
     align-items: center;
 }
 .main header .navigation {
-    width: 365px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     z-index: 2;
-    margin-left: 52vw;
+    margin-left: 54vw;
     height: 70px;
 }
 .main header .navigation_link {
     font-family: 'Share Tech Mono';
-    font-size: 24px;
+    font-size: 2vw;
     line-height: 1;
     text-decoration: none;
     color: #fff;
     padding: 10px 15px;
-    margin: 10px 20px;
 }
 .main .navigation_link:hover {
     border: 3px solid #4AF8DD;
@@ -137,9 +136,19 @@ h1, h2, h3 {
     line-height: 1;
     color: #FE5AA3;
     padding-left: 13px;
+    position: absolute;
+    top: 38vh;
 }
 .main .main_rightsub {
-
+    font-family: Share Tech Mono;
+    font-size: 24px;
+    line-height: 1;
+    color: #fff;
+    position: absolute;
+    padding-left: 13px;
+    top: 40.7vh;
+    right: 2vh;
+    z-index: 3;
 }
 .main .main_h1 {
     position: absolute;
@@ -147,7 +156,7 @@ h1, h2, h3 {
     transform: translateY(-50%);
     font-family: Rubik;
     font-weight: 900;
-    font-size: 165px;
+    font-size: 12.6vw;
     line-height: 36px;
     /* or 20% */
     display: flex;
@@ -157,4 +166,36 @@ h1, h2, h3 {
     color: #fff;
     z-index: 5;
     text-transform: uppercase;
+}
+.main .main_gtd {
+    position: absolute;
+    width: 322px;
+    height: 105px;
+    left: 10vw;
+    bottom: 20vh;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 35px;
+    color: #142664;
+    text-transform: uppercase;
+}
+.main .main_img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+}
+.main .main_img div {
+    font-family: Rajdhani;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height, or 150% */
+    color: #979797;
+}
+.main .main_img img {
+    width: 29vw;
+    height: 40vh;
 }
